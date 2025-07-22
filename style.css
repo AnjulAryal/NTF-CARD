@@ -47,6 +47,9 @@ body{
     align-items: center;
     column-gap: 0.5rem;
 }
+.card__image{
+     position: relative;
+}
 .card__value{
     color: var(--Cyan400);
     font-size: 1.5rem;
@@ -95,4 +98,44 @@ body{
 }
 .name{
     color: var(--White);
+}
+.name:hover{
+    color: var(--Cyan400);
+    cursor: pointer;
+}
+.card__title:hover{
+    color: var(--Cyan400);
+    cursor: pointer;
+}
+.card__image:hover{
+    cursor: pointer;
+}
+.eye_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--Cyan400);
+    object-fit: cover;
+    opacity: 0;
+    border-radius: 5%;
+    backdrop-filter: blur(10px);
+}
+.eye_image:hover{
+    opacity: 0.5;
+    transition: all 3s ease-in-out;
+}
+@media screen  and (min-width:760px) {
+    .card{
+        max-width: 400px;
+    }
+    .icon1{
+        width: 1rem;
+        height: 1rem;
+    }
 }
