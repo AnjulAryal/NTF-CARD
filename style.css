@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+:root{
+    --Blue950: hsl(217, 54%, 11%);
+    --Blue900: hsl(216, 50%, 16%);
+    --Blue800: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --Blue500: hsl(215, 51%, 70%);
+    --Cyan400: hsl(178, 100%, 50%);
+}
+body{
+    height: 100vh;
+    background-color: var(--Blue950);
+    display: grid;
+    place-items: center;
+}
+.card{
+    background-color: var(--Blue900);
+    padding: 2rem;
+    margin-inline: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    border-radius: 0.5rem;
+}
+.card__image-container{
+    width: 100%;
+    border-radius: 5%;
+}
+.title--white{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.text--size{
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: var(--Blue500);
+}
+.card__price,.card__time{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+.card__value{
+    color: var(--Cyan400);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.card__timing,.clock-icon{
+    color: var(--Blue500);
+    font-size: 1.5rem;
+}
+.icon{
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+}
+.icon1{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.icon img{
+    width: 100%;
+}
+.card__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-block-end: 0.001rem solid var(--White);
+    padding-block-end: 1rem;
+}
+.card__avatar-image{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+    border: solid white 0.15rem;
+}
+.card__avatar-image img{
+    width: 100%;
+}
+.card__avatar{
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+.card__avatar-text{
+    color: var(--Blue500);
+}
+.name{
+    color: var(--White);
+}
